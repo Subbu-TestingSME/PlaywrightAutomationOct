@@ -39,7 +39,7 @@ jobs:
       - name: Run tests on Azure Playwright Workspace
         env:
           PLAYWRIGHT_SERVICE_URL: ${{ vars.PLAYWRIGHT_SERVICE_URL }}
-        run: npx playwright test --config=playwright.service.config.js --workers=6
+        run: npx playwright test --config=playwright.service.config.js --workers=7
 
       - name: Upload test report
         if: always()
